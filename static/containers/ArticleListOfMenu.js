@@ -33,7 +33,7 @@ define("containers/ArticleListOfMenu", ["require", "exports", "react", "../compo
         List.prototype.filterArticles = function () {
             // react-router-dom props
             var pathname = this.props.location.pathname;
-            return articles.filter(function (article) { return article.pathname.includes(pathname); });
+            return articles.filter(function (article) { return ~article.pathname.indexOf(pathname); });
         };
         List.prototype.changePage = function (page) {
             this.setState({ page: page });
