@@ -1,14 +1,1 @@
-define("components/Box", ["require", "exports", "react"], function (require, exports, React) {
-    "use strict";
-    exports.__esModule = true;
-    exports["default"] = function (_a) {
-        var title = _a.title, keywords = _a.keywords, pathname = _a.pathname, _b = _a.theme, theme = _b === void 0 ? 'primary' : _b, description = _a.description;
-        return React.createElement("div", { className: "box" },
-            React.createElement("article", { className: "media" },
-                React.createElement("div", { className: "media-content" },
-                    React.createElement("div", { className: "content", style: { cursor: 'pointer' } },
-                        React.createElement("h4", { onClick: function (e) { location.href = pathname; } }, title),
-                        React.createElement("p", { onClick: function (e) { location.href = pathname; } }, description),
-                        React.createElement("div", { className: "tags" }, keywords && keywords.map(function (tag) { return React.createElement("a", { href: "/#@" + tag, className: "tag is-" + theme }, tag); }))))));
-    };
-});
+define("components/Box",["require","exports","react"],function(e,t,a){"use strict";t.__esModule=!0,t.default=function(e){var t=e.title,n=e.keywords,c=e.pathname,r=e.theme,i=void 0===r?"primary":r,o=e.description;return a.createElement("div",{className:"box"},a.createElement("article",{className:"media"},a.createElement("div",{className:"media-content"},a.createElement("div",{className:"content",style:{cursor:"pointer"}},a.createElement("h4",{onClick:function(e){location.href=c}},t),a.createElement("p",{onClick:function(e){location.href=c}},o),a.createElement("div",{className:"tags"},n&&n.map(function(e){return a.createElement("a",{href:"/#@"+e,className:"tag is-"+i},e)}))))))}});
