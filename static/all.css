@@ -10751,3 +10751,12 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 
 
+.content li > p {
+    margin: 1em 0 .4em !important;
+}
+.content ul {
+    margin-top: 0;
+}
+.content > .tags:last-child {
+    margin-top: 2em;
+}
